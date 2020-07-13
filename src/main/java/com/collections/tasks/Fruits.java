@@ -1,12 +1,13 @@
 package main.java.com.collections.tasks;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Fruits{
 
-    public void addFruits(){
+    public static void addFruits(){
 
-        ArrayList<String> firstBasket = new ArrayList<>();
+        List<String> firstBasket = new ArrayList<String>();
 
         firstBasket.add("Mango");
         firstBasket.add("Kiwi");
@@ -15,40 +16,37 @@ public class Fruits{
         firstBasket.add("Apple");
         firstBasket.add("Avocado");
 
-        Fruits fr = new Fruits();
-
         System.out.println("List of fruits in first basket: ");
-        fr.printFruits(firstBasket);
-        fr.swapFruits(firstBasket);
+        Fruits.printFruits(firstBasket);
+        Fruits.swapFruits(firstBasket);
 
         System.out.println("\nList of fruits in first basket after checking: ");
-        fr.printFruits(firstBasket);
+        Fruits.printFruits(firstBasket);
 
-        ArrayList<String> secondBasket = new ArrayList<>();
+        List<String> secondBasket = new ArrayList<>();
         secondBasket.add("Tangerine");
         secondBasket.add("Pear");
         secondBasket.add("Banana");
         secondBasket.add("Coconut");
 
         System.out.println("\nList of fruits in second basket: ");
-        fr.printFruits(secondBasket);
-        fr.swapFruits(secondBasket);
+        Fruits.printFruits(secondBasket);
+        Fruits.swapFruits(secondBasket);
     }
 
-    public void printFruits(ArrayList fruits){
+    public static void printFruits(List<String> fruits){
         for (Object elem: fruits) {
             System.out.print(elem + " ");
         }
         System.out.println(" ");
     }
 
-    public ArrayList swapFruits(ArrayList fruits){
+    public static void swapFruits(List<String> fruits){
 
         if(fruits.contains("Orange")){
             fruits.set(fruits.indexOf("Orange"), "Grapefruit");
         } else {
             System.out.println("\nThere is no such fruit");
         }
-        return fruits;
     }
 }
