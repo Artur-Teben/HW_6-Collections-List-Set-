@@ -7,7 +7,7 @@ public class Fruits{
 
     public static void addFruits(){
 
-        List<String> firstBasket = new ArrayList<String>();
+        List<String> firstBasket = new ArrayList<>();
 
         firstBasket.add("Mango");
         firstBasket.add("Kiwi");
@@ -42,9 +42,10 @@ public class Fruits{
     }
 
     public static void swapFruits(List<String> fruits){
+        final String CHECK_FRUIT = "Orange";
 
-        if(fruits.contains("Orange")){
-            fruits.set(fruits.indexOf("Orange"), "Grapefruit");
+        if(fruits.contains(CHECK_FRUIT)){
+            fruits.set(fruits.indexOf(CHECK_FRUIT), "Grapefruit");
         } else {
             System.out.println("\nThere is no such fruit");
         }
