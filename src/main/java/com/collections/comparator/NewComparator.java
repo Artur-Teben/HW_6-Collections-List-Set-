@@ -1,4 +1,4 @@
-package main.java.com.collections.tasks;
+package main.java.com.collections.comparator;
 
 import java.util.Comparator;
 

@@ -1,4 +1,4 @@
-package main.java.com.collections.tasks;
+package main.java.com.collections.lists;
 
 import java.util.ArrayList;
 import java.util.List;

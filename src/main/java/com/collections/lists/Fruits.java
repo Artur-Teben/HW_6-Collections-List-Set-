@@ -1,12 +1,12 @@
-package main.java.com.collections.tasks;
+package main.java.com.collections.lists;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Fruits{
+    public static final String CHECK_FRUIT = "Orange";
 
     public static void addFruits(){
-
         List<String> firstBasket = new ArrayList<>();
 
         firstBasket.add("Mango");
@@ -42,8 +42,6 @@ public class Fruits{
     }
 
     public static void swapFruits(List<String> fruits){
-        final String CHECK_FRUIT = "Orange";
-
         if(fruits.contains(CHECK_FRUIT)){
             fruits.set(fruits.indexOf(CHECK_FRUIT), "Grapefruit");
         } else {

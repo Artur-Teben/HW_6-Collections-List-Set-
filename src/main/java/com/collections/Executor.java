@@ -1,4 +1,9 @@
-package main.java.com.collections.tasks;
+package main.java.com.collections;
+
+import main.java.com.collections.lists.DivisionByThree;
+import main.java.com.collections.lists.Fruits;
+import main.java.com.collections.lists.SimilarElements;
+import main.java.com.collections.lists.SortSetByDescending;
 
 public class Executor {
     public static void executeApplication() {

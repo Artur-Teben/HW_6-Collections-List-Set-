@@ -1,4 +1,6 @@
-package main.java.com.collections.tasks;
+package main.java.com.collections.lists;
+
+import main.java.com.collections.comparator.NewComparator;
 
 import java.util.Set;
 import java.util.TreeSet;
